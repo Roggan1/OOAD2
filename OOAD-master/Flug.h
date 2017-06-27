@@ -13,12 +13,19 @@
 
 #ifndef FLUG_H
 #define FLUG_H
-#include "CUI.h"
+#include <string>
+
+using namespace std;
 
 class Flug
 {
 public:
     Flug();
+    int getID();
+    string getStart();
+    string getZiel();
+    double getPreis();
+    string getAirline();
 
     virtual ~Flug();
 private:

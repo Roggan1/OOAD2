@@ -19,7 +19,8 @@
  */
 int main(int argc, char** argv)
 {
-
+    CUI FlyNow;
+    FlyNow.init();
     return 0;
 }
 

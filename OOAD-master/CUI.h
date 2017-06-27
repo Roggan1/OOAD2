@@ -14,6 +14,7 @@
 #ifndef CUI_H
 #define CUI_H
 #include <string>
+#include <vector>
 #include <iostream>
 #include "Account.h"
 #include "Bestätigung.h"
@@ -35,7 +36,7 @@ public:
     void flugSuchen();
     void init();
     bool loginPrüfen(string Name, string Passwort);
-    void fluegeAnzeigen();
+    void fluegeAnzeigen(int FlugNr);
     void buchen();
     void bezahlen();
     void zeigeTicket();
@@ -46,8 +47,8 @@ public:
 private:
 
     int m_auswahl;
-    Account* m_aktAccount;
-    vector<Account*> m_Accountliste;
+   // Account* m_aktAccount;
+    //vector<Account*> m_Accountliste;
     Flugplan* m_Flugplan;
     vector<Ticket*> m_Ticketliste;
     vector<Buchung*> Buchungsliste;

@@ -13,20 +13,31 @@
 
 #ifndef FLUGPLAN_H
 #define FLUGPLAN_H
-#include "CUI.h"
+#include <iostream>
+#include <string>
+#include "Flug.h"
+#include <fstream>
+#include <sstream>
+
+
+using namespace std;
 
 class Flugplan
 {
 public:
     Flugplan();
-    int fluegeEinlesen();
-
+    void fluegeEinlesen(string file);
+    void findeStart(string Start);
+    void findeZiel(string Ziel);
+    void findeID(int ID);
+    void print(int FlugNr);
+    Flug getFlug(int ID);
+    
     virtual ~Flugplan();
 private:
 
-    string m_flughafen;
     time_t m_gueltigAb;
-    Flug* m_flugListe;
+    vector<Flug*> m_flugListe;
     
 };
 

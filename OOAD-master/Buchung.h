@@ -13,19 +13,22 @@
 
 #ifndef BUCHUNG_H
 #define BUCHUNG_H
-#include "CUI.h"
+#include "Flug.h"
+
+using namespace std;
 
 class Buchung
 {
 public:
-    Buchung();
+    Buchung(Flug Flug, int Anzahl);
     Buchung belegErstellen();
 
     virtual ~Buchung();
 private:
 
-    Account m_zahlung;
-    Bezahlung m_bestätigung;
+    int m_Anzahl;
+    Flug m_Flug;
+    int m_Preis;
     
 };
 

@@ -13,7 +13,7 @@
 
 #ifndef BESTÄTIGUNG_H
 #define BESTÄTIGUNG_H
-
+#include "CUI.h"
 class Bestätigung
 {
 public:
