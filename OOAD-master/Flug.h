@@ -21,6 +21,7 @@ class Flug
 {
 public:
     Flug();
+    Flug(int flugNr, string start, string ziel, double preis, string airline);
     int getID();
     string getStart();
     string getZiel();

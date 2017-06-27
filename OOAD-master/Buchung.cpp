@@ -14,20 +14,24 @@
 #include "Buchung.h"
 
 
-Buchung::Buchung(Flug Flug, int Anzahl)
+Buchung::Buchung(Flug* Flug, int Anzahl)
 {
     m_Flug=Flug;
     m_Anzahl=Anzahl;
-    m_Preis=m_Flug.getPreis()*m_Anzahl;//Preis berechnen
+    m_Preis=m_Flug->getPreis()*m_Anzahl;//Preis berechnen
 }
 
 Buchung::~Buchung()
 {
 }
 
-Buchung Buchung::belegErstellen()
+int Buchung::getAnzahl()
 {
-   // cout<<"Es wurden "<<m_Anzahl<<" Tickets für "<<m_Preis<<"€ gekauft"<<endl;
-    
+    return m_Anzahl;
+}
+
+int Buchung::getPreis()
+{
+    return m_Preis;
 }
 

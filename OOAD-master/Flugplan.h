@@ -18,7 +18,8 @@
 #include "Flug.h"
 #include <fstream>
 #include <sstream>
-
+#include <vector>
+#include <ctime>
 
 using namespace std;
 
@@ -27,11 +28,8 @@ class Flugplan
 public:
     Flugplan();
     void fluegeEinlesen(string file);
-    void findeStart(string Start);
-    void findeZiel(string Ziel);
-    void findeID(int ID);
-    void print(int FlugNr);
-    Flug getFlug(int ID);
+    Flug* getFlug(int ID);
+    int getSize();
     
     virtual ~Flugplan();
 private:

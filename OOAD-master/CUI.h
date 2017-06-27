@@ -16,13 +16,11 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "Account.h"
-#include "Bestätigung.h"
-#include "Bezahlung.h"
+
 #include "Buchung.h"
 #include "Flug.h"
 #include "Flugplan.h"
-#include "Ticket.h"
+
 
 using namespace std;
 
@@ -31,26 +29,17 @@ class CUI
 public:
     CUI();
     int zeigeMenue();
-    int addAccount();
-    int anmelden();
-    void flugSuchen();
     void init();
-    bool loginPrüfen(string Name, string Passwort);
-    void fluegeAnzeigen(int FlugNr);
+    void fluegeAnzeigen();
     void buchen();
     void bezahlen();
-    void zeigeTicket();
-    void logout();
-    void registrieren();
     
     virtual ~CUI();
 private:
 
     int m_auswahl;
-   // Account* m_aktAccount;
-    //vector<Account*> m_Accountliste;
     Flugplan* m_Flugplan;
-    vector<Ticket*> m_Ticketliste;
+   
     vector<Buchung*> Buchungsliste;
     
 };

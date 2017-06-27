@@ -35,14 +35,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Account.o \
-	${OBJECTDIR}/Bestätigung.o \
-	${OBJECTDIR}/Bezahlung.o \
 	${OBJECTDIR}/Buchung.o \
 	${OBJECTDIR}/CUI.o \
 	${OBJECTDIR}/Flug.o \
 	${OBJECTDIR}/Flugplan.o \
-	${OBJECTDIR}/Ticket.o \
 	${OBJECTDIR}/main.o
 
 
@@ -70,21 +66,6 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ooad-master: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ooad-master ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Account.o: Account.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Account.o Account.cpp
-
-${OBJECTDIR}/Bestätigung.o: Bestätigung.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Bestätigung.o Bestätigung.cpp
-
-${OBJECTDIR}/Bezahlung.o: Bezahlung.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Bezahlung.o Bezahlung.cpp
-
 ${OBJECTDIR}/Buchung.o: Buchung.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -104,11 +85,6 @@ ${OBJECTDIR}/Flugplan.o: Flugplan.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Flugplan.o Flugplan.cpp
-
-${OBJECTDIR}/Ticket.o: Ticket.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ticket.o Ticket.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}

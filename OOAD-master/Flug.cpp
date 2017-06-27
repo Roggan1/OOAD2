@@ -13,6 +13,11 @@
 
 #include "Flug.h"
 
+Flug::Flug()
+{
+    
+}
+
 Flug::Flug(int flugNr, string start, string ziel, double preis, string airline) : m_flugNr(flugNr), m_start(start), m_ziel(ziel), m_preis(preis), m_airline(airline)
 {
                                                                                 //Konstruktor der Klasse Flug

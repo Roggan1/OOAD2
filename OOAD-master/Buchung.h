@@ -20,14 +20,15 @@ using namespace std;
 class Buchung
 {
 public:
-    Buchung(Flug Flug, int Anzahl);
-    Buchung belegErstellen();
-
+    Buchung(Flug* Flug, int Anzahl);
+    int getPreis();
+    int getAnzahl();
+    
     virtual ~Buchung();
 private:
 
     int m_Anzahl;
-    Flug m_Flug;
+    Flug* m_Flug;
     int m_Preis;
     
 };

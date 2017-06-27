@@ -28,7 +28,7 @@ Flugplan::~Flugplan()
     }
 }
 
- Flugplan::fluegeEinlesen(string file) //Einlesen des Flugplanes
+void Flugplan::fluegeEinlesen(string file) //Einlesen des Flugplanes
 {
     vector<string> data; //Erstellung der benötigten Variablen
     ifstream ifs;
@@ -60,68 +60,17 @@ Flugplan::~Flugplan()
         ss.clear(); //Den Stringstream clearen
 
     }
-    m_gueltigAb = time; //setzt die Aktualisierungszeit
+   // m_gueltigAb = time(); //setzt die Aktualisierungszeit
 }
 
-void Flugplan::findeStart(string Start)
-{
-    for (int i = 1; i < m_flugListe.size(); i++) //Die Flugliste wird durchgesucht
-    {
-        if (Start = m_flugListe[i]->getStart()) //Der eingegebene Start wird mit den Starts in der Liste verglichen
-        {
-            cout << m_flugListe[i].getID() << endl; //Die ID wird bei erfolgreicher Suche Ausgegeben
-        }
-        else
-        {
-            cout << "Keine Erfolgreiche Suche!" << endl; //Error bei Misserfolg
-        }
 
-    }
-}
-
-void Flugplan::findeZiel(string Ziel)
-{
-    for (int i = 1; i < m_flugListe.size(); i++) //Die Flugliste wird durchgesucht
-    {
-        if (Ziel = m_flugListe[i]->getZiel()) //Das eingegebene Ziel wird mit den Zielen in der Liste verglichen
-        {
-            cout << m_flugListe[i].getID() << endl; //Die ID wird bei erfolgreicher Suche Ausgegeben
-        }
-        else
-        {
-            cout << "Keine Erfolgreiche Suche!" << endl; //Error bei Misserfolg
-        }
-
-    }
-}
-
-void Flugplan::findeID(int ID)
-{
-    for (int i = 1; i < m_flugListe.size(); i++) //Die Flugliste wird durchgesucht
-    {
-        if (ID = m_flugListe[i]->getID()) //Die eingegebene ID wird mit den ID's in der Liste verglichen
-        {
-            cout << m_flugListe[i].getID() << endl; //Die ID wird bei erfolgreicher Suche Ausgegeben
-        }
-        else
-        {
-            cout << "Keine Erfolgreiche Suche!" << endl; //Error bei Misserfolg
-        }
-
-    }
-}
-
-void Flugplan::print(int FlugNr)
-{
-    cout << "FlugNr: " << m_flugListe[FlugNr]->getID() << endl;
-    cout << "Start: " << m_flugListe[FlugNr]->getStart() << endl;
-    cout << "Ziel: " << m_flugListe[FlugNr]->getZiel() << endl;
-    cout << "Preis: " << m_flugListe[FlugNr]->getPreis() << endl;
-    cout << "Airline: " << m_flugListe[FlugNr]->getAirline() << endl;
-}
-
-Flug Flugplan::getFlug(int ID)
+Flug* Flugplan::getFlug(int ID)
 {
     return m_flugListe[ID];
+}
+
+int Flugplan::getSize()
+{
+    return m_flugListe.size();
 }
 

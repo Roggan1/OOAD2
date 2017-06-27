@@ -4,14 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>Account.h</itemPath>
-      <itemPath>Bestätigung.h</itemPath>
-      <itemPath>Bezahlung.h</itemPath>
       <itemPath>Buchung.h</itemPath>
       <itemPath>CUI.h</itemPath>
       <itemPath>Flug.h</itemPath>
       <itemPath>Flugplan.h</itemPath>
-      <itemPath>Ticket.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -20,14 +16,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Account.cpp</itemPath>
-      <itemPath>Bestätigung.cpp</itemPath>
-      <itemPath>Bezahlung.cpp</itemPath>
       <itemPath>Buchung.cpp</itemPath>
       <itemPath>CUI.cpp</itemPath>
       <itemPath>Flug.cpp</itemPath>
       <itemPath>Flugplan.cpp</itemPath>
-      <itemPath>Ticket.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -56,18 +48,6 @@
           <standard>8</standard>
         </ccTool>
       </compileType>
-      <item path="Account.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Account.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Bestätigung.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Bestätigung.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Bezahlung.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Bezahlung.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Buchung.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Buchung.h" ex="false" tool="3" flavor2="0">
@@ -85,10 +65,6 @@
       <item path="Flugplan.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Flüge.txt" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Ticket.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Ticket.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -114,18 +90,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Account.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Account.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Bestätigung.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Bestätigung.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Bezahlung.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Bezahlung.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Buchung.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Buchung.h" ex="false" tool="3" flavor2="0">
@@ -143,10 +107,6 @@
       <item path="Flugplan.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Flüge.txt" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Ticket.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Ticket.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
