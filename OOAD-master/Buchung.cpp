@@ -16,8 +16,8 @@
 
 Buchung::Buchung(Flug* Flug, int Anzahl)
 {
-    m_Flug=Flug;
-    m_Anzahl=Anzahl;
+    m_Flug=Flug; //Flug Speichern
+    m_Anzahl=Anzahl; //Anzahl Speichern
     m_Preis=m_Flug->getPreis()*m_Anzahl;//Preis berechnen
 }
 
@@ -25,12 +25,12 @@ Buchung::~Buchung()
 {
 }
 
-int Buchung::getAnzahl()
+int Buchung::getAnzahl() //getter für Anzahl der gebuchten Tickets
 {
     return m_Anzahl;
 }
 
-int Buchung::getPreis()
+int Buchung::getPreis() //getter für berechneten preis
 {
     return m_Preis;
 }

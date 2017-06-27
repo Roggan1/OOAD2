@@ -19,8 +19,8 @@
  */
 int main(int argc, char** argv)
 {
-    CUI FlyNow;
-    FlyNow.init();
+    CUI FlyNow;//CUI erstellen
+    FlyNow.init();// init aufrufen
     return 0;
 }
 
