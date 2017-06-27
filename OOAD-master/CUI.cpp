@@ -60,7 +60,7 @@ int CUI::zeigeMenue()
 
 void CUI::fluegeAnzeigen()
 {
-    for(int i=i;i<m_Flugplan->getSize();i++){ //Schleife um alle Flüge im Flugplan anzuzeigen
+    for(int i=1;i<m_Flugplan->getSize();i++){ //Schleife um alle Flüge im Flugplan anzuzeigen
     cout<<m_Flugplan->getFlug(i)->getID()<<" Von "<<m_Flugplan->getFlug(i)->getStart()<<" nach "<<m_Flugplan->getFlug(i)->getZiel()<<" Airline: "<<m_Flugplan->getFlug(i)->getAirline()<<" Preis: "<<m_Flugplan->getFlug(i)->getPreis()<<endl;
     //ausgabe der Flugliste
     }
@@ -69,10 +69,10 @@ void CUI::fluegeAnzeigen()
 void CUI::buchen()
 {
     int tmpAnzahl,tmpID; //temporäre variablen zur zwischenspeicherung von Anzahl und ID des Flugs
-    cout<<"Flugnummer eingeben:"<<endl; //einlesen der Flugnummer
+    cout<<"Flugnummer eingeben:"<<endl; //einlesen der Flugnummer/ausgabe 
     cin>> tmpID;
     
-    cout<<"Wieviele Tickets?"; //Einlesen der Ticketanzahl
+    cout<<"Wieviele Tickets?"; //Einlesen der Ticketanzahl/ausgabe
     cin>> tmpAnzahl;
     
 Buchungsliste.push_back(new Buchung(m_Flugplan->getFlug(tmpID), tmpAnzahl));//Speicherung der Buchung in der Buchungsliste

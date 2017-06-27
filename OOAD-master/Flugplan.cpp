@@ -17,7 +17,7 @@
 
 Flugplan::Flugplan()
 {
-    m_gueltigAb = -1; //setzt den Default Wert der Gültigkeit auf einen Ungültigen Wert
+  //  m_gueltigAb = -1; //setzt den Default Wert der Gültigkeit auf einen Ungültigen Wert
 }
 
 Flugplan::~Flugplan()
@@ -64,12 +64,12 @@ void Flugplan::fluegeEinlesen(string file) //Einlesen des Flugplanes
 }
 
 
-Flug* Flugplan::getFlug(int ID)
+Flug* Flugplan::getFlug(int ID) //getter für Flüge
 {
     return m_flugListe[ID];
 }
 
-int Flugplan::getSize()
+int Flugplan::getSize() //getter für größe der Liste
 {
     return m_flugListe.size();
 }

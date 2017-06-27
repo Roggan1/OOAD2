@@ -34,7 +34,7 @@ public:
     virtual ~Flugplan();
 private:
 
-    time_t m_gueltigAb;
+    //time_t m_gueltigAb;
     vector<Flug*> m_flugListe;
     
 };

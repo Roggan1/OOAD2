@@ -1,4 +1,4 @@
 3
-1 München Frankfurt 10,00 LuftAir
-2 Frankfurt Berlin 40,00 LuxusAir
-3 München Berlin 20,00 BilloAir
+1 München Frankfurt 10.00 LuftAir
+2 Frankfurt Berlin 40.00 LuxusAir
+3 München Berlin 20.00 BilloAir
