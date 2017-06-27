@@ -20,9 +20,9 @@ using namespace std;
 class Flug
 {
 public:
-    Flug();
-    Flug(int flugNr, string start, string ziel, double preis, string airline);
-    int getID();
+    Flug(); //standardkonstruktor
+    Flug(int flugNr, string start, string ziel, double preis, string airline); //weiterer konstruktor
+    int getID();  //getter für alle variablen der klasse
     string getStart();
     string getZiel();
     double getPreis();
@@ -31,7 +31,7 @@ public:
     virtual ~Flug();
 private:
 
-    int m_flugNr;
+    int m_flugNr;  //variablen der klasse
     string m_start;
     string m_ziel;
     double m_preis;

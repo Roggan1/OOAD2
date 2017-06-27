@@ -20,16 +20,16 @@ using namespace std;
 class Buchung
 {
 public:
-    Buchung(Flug* Flug, int Anzahl);
-    int getPreis();
-    int getAnzahl();
+    Buchung(Flug* Flug, int Anzahl); //Konstruktor
+    int getPreis();// getter für Gesamtpreis der Buchung
+    int getAnzahl();// getter für anzahl der gebuchten tickets
     
     virtual ~Buchung();
 private:
 
-    int m_Anzahl;
-    Flug* m_Flug;
-    int m_Preis;
+    int m_Anzahl; //anzahl der gebuchten tickets
+    Flug* m_Flug; //zeiger auf gebuchten flug
+    int m_Preis; //berechneter gesamtpreis
     
 };
 

@@ -27,20 +27,20 @@ using namespace std;
 class CUI
 {
 public:
-    CUI();
-    int zeigeMenue();
-    void init();
-    void fluegeAnzeigen();
-    void buchen();
-    void bezahlen();
+    CUI();//konstruktor
+    int zeigeMenue();//funktion zum anzeigen des menüs und auswählen der funktionen
+    void init();// funktion zum initialisierne des ticketsystems
+    void fluegeAnzeigen(); //funktion zum anzeigen der gespeicherten flüge
+    void buchen();// funktion zur erstellung einer buchung
+    void bezahlen();//funktion bestätigung der buchung
     
     virtual ~CUI();
 private:
 
-    int m_auswahl;
-    Flugplan* m_Flugplan;
+    int m_auswahl; //speichern der menüauswahl
+    Flugplan* m_Flugplan; //zeiger auf flugplan
    
-    vector<Buchung*> Buchungsliste;
+    vector<Buchung*> Buchungsliste; //vektor zur speicherung der buchungen
     
 };
 

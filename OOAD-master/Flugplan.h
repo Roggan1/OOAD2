@@ -26,16 +26,16 @@ using namespace std;
 class Flugplan
 {
 public:
-    Flugplan();
-    void fluegeEinlesen(string file);
-    Flug* getFlug(int ID);
-    int getSize();
+    Flugplan(); //Konstruktor
+    void fluegeEinlesen(string file); //funktion zum einlesen der Flüge aus textdatei
+    Flug* getFlug(int ID); //getter für Flüge
+    int getSize(); //getter für gesamtanzahl der gespeicherten flüge
     
     virtual ~Flugplan();
 private:
 
     //time_t m_gueltigAb;
-    vector<Flug*> m_flugListe;
+    vector<Flug*> m_flugListe; //vektor zum speichern der flüge
     
 };
 
