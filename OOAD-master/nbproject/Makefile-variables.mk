@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=CLang-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/CLang-Linux
-CND_ARTIFACT_NAME_Debug=pad2_game
-CND_ARTIFACT_PATH_Debug=dist/Debug/CLang-Linux/pad2_game
+CND_ARTIFACT_NAME_Debug=ooad
+CND_ARTIFACT_PATH_Debug=dist/Debug/CLang-Linux/ooad
 CND_PACKAGE_DIR_Debug=dist/Debug/CLang-Linux/package
-CND_PACKAGE_NAME_Debug=pad2game.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/CLang-Linux/package/pad2game.tar
+CND_PACKAGE_NAME_Debug=ooad.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/CLang-Linux/package/ooad.tar
 # Release configuration
 CND_PLATFORM_Release=CLang-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/CLang-Linux
-CND_ARTIFACT_NAME_Release=pad2_game
-CND_ARTIFACT_PATH_Release=dist/Release/CLang-Linux/pad2_game
+CND_ARTIFACT_NAME_Release=ooad
+CND_ARTIFACT_PATH_Release=dist/Release/CLang-Linux/ooad
 CND_PACKAGE_DIR_Release=dist/Release/CLang-Linux/package
-CND_PACKAGE_NAME_Release=pad2game.tar
-CND_PACKAGE_PATH_Release=dist/Release/CLang-Linux/package/pad2game.tar
+CND_PACKAGE_NAME_Release=ooad.tar
+CND_PACKAGE_PATH_Release=dist/Release/CLang-Linux/package/ooad.tar
 #
 # include compiler specific variables
 #
